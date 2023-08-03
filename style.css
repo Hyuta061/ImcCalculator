@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" ,sans-serif;
+
+}
+body {
+  background-color:  #1a72ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+}
+.main {
+  
+  max-width: 700px;
+  margin: 0px auto;
+  background-color: white;
+  padding: 25px 60px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main > h1 {
+  margin-bottom: 10px;
+}
+.tabela{
+  width: 90%;
+  display: flex;
+  font-size: 1rem;
+  
+
+
+}
+.tabela .imc {
+  width: 70%;
+}
+.tabela p{
+
+  margin: 10px 0;
+  line-height: 2;
+}
+.tabela .imc p {
+  display: flex;
+  align-items: center;
+}
+.tabela .imc p::before {
+  content: "";
+  display: inline-block;
+  background-color: #1a72ff;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  margin-right: 10px;
+
+}
+.tabela .resultado p{
+  text-align: start;
+}
+.tabela .resultado {
+  text-align: end;
+  max-width: 100%;
+}
+@media (max-width:640px){
+  body{
+    background-color: #fff;
+
+  }
+  .main{
+    margin: 10px 0;
+    height: 100vh;
+    padding: 10px 20px ;
+    min-width: 370px;
+  }
+  .tabela{
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .tabela div{
+    max-width: 50%;
+  }
+  .res {
+    display: flex;
+    justify-content: center;
+    /* position: absolute; */
+  }
+  .pres{
+    flex: 1 1 70%;
+    background-color: rgb(12, 196, 52);
+    border-radius: 5px;
+    padding: 50px 30px ;
+    text-align: center;
+    color: #fff;
+    font-size: .9rem;
+  }
+  .preserro {
+    flex: 1 1 70%;
+    background-color: rgb(233, 14, 14);
+    border-radius: 5px;
+    padding: 10px 10px  ;
+    text-align: center;
+    color: #fff;
+    font-size: .9rem;
+  }
+
+}
+
+form {
+  justify-content: center;
+  margin-block: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+form label, form input {
+  font-size: 1.2rem;
+  width: 100%;
+}
+form input {
+  padding: 5px 10px;
+  font-size: 1rem;
+  color:rgb(61, 61, 61) ;
+}
+form button {
+  width: 100%;
+  height: 50px;
+  margin: 20px auto 0;
+  background-color: #1a72ff;
+  color:#fff ;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+form button:hover, form button:active {
+  outline: 3px solid #1a72ff;
+}
+.res {
+  display: flex;
+  justify-content: center;
+}
+.pres{
+  flex: 1 1 70%;
+  background-color: rgb(12, 196, 52);
+  border-radius: 5px;
+  padding: 10px 10px ;
+  text-align: center;
+  color: #fff;
+  font-size: .9rem;
+}
+.preserro {
+  flex: 1 1 70%;
+  background-color: rgb(233, 14, 14);
+  border-radius: 5px;
+  padding: 10px 10px  ;
+  text-align: center;
+  color: #fff;
+  font-size: .9rem;
+}
